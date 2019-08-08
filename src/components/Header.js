@@ -8,7 +8,7 @@ class Header extends Component{
         return (
             <header>
                 <Navbar collapseOnSelect expand="lg" bg="dark-blue" variant="dark">
-                    <Navbar.Brand href="/">Enoch Bradshaw</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/">Enoch Bradshaw</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto"></Nav>
