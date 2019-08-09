@@ -12,7 +12,7 @@ class Home extends Component{
                     <Col xs sm="6" md="5" className="d-flex align-items-center">
                         <div>
                             <Row>
-                                <h1>Enoch</h1>
+                                <h1>Enoch Bradshaw</h1>
                             </Row>
                             <Row>
                                 <p>Interactive Developer, Artist, Human</p>
