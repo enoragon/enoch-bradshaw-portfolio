@@ -1,5 +1,9 @@
 body {
-  background-color:  #10182A
+  background-color:  #10182A;
+  background-image:  radial-gradient(circle at top, #10182A, #0B101C);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 1000px */
 }
 
 .App {
@@ -7,9 +11,13 @@ body {
 }
 
 .bg-blue {
-  background-color: #10182A
+  background-color: #10182A;
 }
 
 .bg-dark-blue {
-  background-color: #0B101C
+  background-color: #0B101C;
+}
+
+.bg-ghost {
+  background-color: rgba(11, 16, 28, 0.2);
 }
