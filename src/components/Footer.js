@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 
 class Footer extends Component{

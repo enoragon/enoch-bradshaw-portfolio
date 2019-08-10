@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
 
 class Home extends Component{
     render(){
         return (
-            <div>
-                Fyuck
-            </div>
+            <Container>
+                
+            </Container>
         );
     }
 }

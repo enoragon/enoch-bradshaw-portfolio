@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Image, Card } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import LongCard from '../components/LongCard/LongCard';
 
 class Work extends Component{
