@@ -1,47 +1,36 @@
 import React, { Component } from 'react';
-import { Row, Col, Image } from 'react-bootstrap'
-import './LongCard.css'
+import { Row, Col, Image } from 'react-bootstrap';
+import  { longcardRow } from './LongCard.module.scss';
 
 
 
-const Img = ({image}) => (
+const Img = ({ image }) => (
     <Col md="3">
-        <Image src={`${image}`} />
-    </Col>);
+        <Image src={image} />
+    </Col>
+);
 
-const CardText = ({title, text}) => (
+const CardText = ({ title, text }) => (
     <Col md="9">
         <h2>{title}</h2>
         <p>{text}</p>
-    </Col>);
+    </Col>
+);
 
-class LongCard extends Component{
-    constructor(props) {
-        super(props)
-    }
-
-    render(){
-        const isImageOnLeft = this.props.isImageOnLeft;
-        let card;
-
-        if (isImageOnLeft) {
-            card = 
-                <Row className="row">
-                    <Img image={this.props.image} />
-                    <CardText title={this.props.title} text={this.props.text} />
-                </Row>;
-        }else{
-            card = 
-                <Row className="row">
-                    <CardText title={this.props.title} text={this.props.text} />
-                    <Img image={this.props.image} />
-                </Row>;
-        }
-
-        return (
-            card
-        );
-    }
-}
+const LongCard = ({ isImageOnLeft, image, title, text }) => (
+    <Row className={longcardRow}>
+        {isImageOnLeft ? (
+            <>
+                <Img image={image} />
+                <CardText title={title} text={text} />
+            </>
+        ) : (
+            <>
+                <CardText title={title} text={text} />
+                <Img image={image} />
+            </>
+        )}
+    </Row>
+)
 
 export default LongCard;
