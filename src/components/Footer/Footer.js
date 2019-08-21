@@ -15,7 +15,6 @@ const Footer = ({ className }) => (
                     <Nav.Link as={Link} to="/Work">Professional Work</Nav.Link>
                     <Nav.Link as={Link} to="/Art">Art Gallery</Nav.Link>
                     <Nav.Link as={Link} to="/About">About</Nav.Link>
-                    <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
                 </Nav>
             </Row>
             <Row className="justify-content-md-center py-5">

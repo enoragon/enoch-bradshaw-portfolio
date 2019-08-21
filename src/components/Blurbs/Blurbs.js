@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Image, Card } from 'react-bootstrap'
+import { Row, Col, Card } from 'react-bootstrap'
 import { gimmeRoom } from './Blurbs.module.scss'
 
 const Blurbs = ({ children, blurbTitle }) => (

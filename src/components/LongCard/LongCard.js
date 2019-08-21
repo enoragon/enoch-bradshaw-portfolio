@@ -10,23 +10,23 @@ const Img = ({ image }) => (
     </Col>
 );
 
-const CardText = ({ title, text }) => (
+const CardText = ({ children, title }) => (
     <Col md="9">
         <h2>{title}</h2>
-        <p>{text}</p>
+        <p>{children}</p>
     </Col>
 );
 
-const LongCard = ({ isImageOnLeft, image, title, text }) => (
+const LongCard = ({ children, isImageOnLeft, image, title }) => (
     <Row className={longcardRow}>
         {isImageOnLeft ? (
             <>
                 <Img image={image} />
-                <CardText title={title} text={text} />
+                <CardText title={title}>{ children }</CardText>
             </>
         ) : (
             <>
-                <CardText title={title} text={text} />
+                <CardText title={title}>{ children }</CardText>
                 <Img image={image} />
             </>
         )}
