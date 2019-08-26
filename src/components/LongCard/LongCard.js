@@ -5,13 +5,13 @@ import  { longcardRow } from './LongCard.module.scss';
 
 
 const Img = ({ image }) => (
-    <Col md="3">
-        <Image src={image} />
+    <Col md="4">
+        <Image src={image}  style={{maxWidth: "350px"}}/>
     </Col>
 );
 
 const CardText = ({ children, title }) => (
-    <Col md="9">
+    <Col md="8">
         <h2>{title}</h2>
         <p>{children}</p>
     </Col>

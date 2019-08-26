@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LongCard from '../components/LongCard/LongCard'
+import Noodle from '../Images/smallnood.png'
+import Human from '../Images/lizard.png'
+import Coder from '../Images/Coder.png'
+import Gamer from '../Images/Gamer.png'
+import Artist from '../Images/Artist.png'
+import CompanyPhoto from '../Images/CompanyPhoto.png'
 
 class Home extends Component{
     render(){
@@ -11,7 +17,7 @@ class Home extends Component{
                     <Row>
                         <Col md="4" className="offset-md-2">
                             <Row className="d-flex justify-content-center">
-                                <Image src="https://via.placeholder.com/150" roundedCircle/>
+                                <Image src={Noodle} roundedCircle style={{maxWidth: "200px"}}/>
                             </Row>
                             <Row className="d-flex justify-content-center">
                                 <p>Noodle Expert</p>
@@ -19,7 +25,7 @@ class Home extends Component{
                         </Col>
                         <Col md="4">
                             <Row className="d-flex justify-content-center">
-                                <Image src="https://via.placeholder.com/150" roundedCircle/>
+                                <Image src={Human} roundedCircle style={{maxWidth: "200px"}}/>
                             </Row>
                             <Row className="d-flex justify-content-center">
                                 <p>Human</p>
@@ -30,7 +36,7 @@ class Home extends Component{
                     <Row>
                         <Col md="4">
                             <Row className="d-flex justify-content-center">
-                                <Image src="https://via.placeholder.com/150" roundedCircle/>
+                                <Image src={Coder} roundedCircle style={{maxWidth: "200px"}}/>
                             </Row>
                             <Row className="d-flex justify-content-center">
                                 <p>Developer</p>
@@ -38,7 +44,7 @@ class Home extends Component{
                         </Col>
                         <Col md="4">
                             <Row className="d-flex justify-content-center">
-                                <Image src="https://via.placeholder.com/150" roundedCircle/>
+                                <Image src={Artist} roundedCircle style={{maxWidth: "200px"}}/>
                             </Row>
                             <Row className="d-flex justify-content-center">
                                 <p>Artist</p>
@@ -46,7 +52,7 @@ class Home extends Component{
                         </Col>
                         <Col md="4">
                             <Row className="d-flex justify-content-center">
-                                <Image src="https://via.placeholder.com/150" roundedCircle/>
+                                <Image src={Gamer} roundedCircle style={{maxHeight: "200px", maxWidth: "200px"}}/>
                             </Row>
                             <Row className="d-flex justify-content-center">
                                 <p>Game Designer</p>
@@ -54,7 +60,13 @@ class Home extends Component{
                         </Col>
                     </Row>
                 </div>
-                <LongCard isImageOnLeft={true} image={'https://via.placeholder.com/200'} title={'Here are some stupid fucking blurbs about me'} text={'I am a digital spider because I make things with the web. The apps I create are non stationary, they are mobile. Most software is developed for the real reality, but I also enjoy developing for the other realities: augmented and virtual.\n\nI\'m a Heelys wearing, noodle enthusiast that births interactive apps with his fingers and brain. Fun fact:     I am definitely not a lizard person'} />
+                <LongCard isImageOnLeft={true} image={CompanyPhoto} title={'Our Values'}>
+                    Our work we take very seriously and we pour our hearts into our projects. 
+                    As you may have noticed, we do not take ourselves very seriously.
+                    We like to laugh and crack jokes but what is most important to us is making cool shit.
+                    We think of ourselves as painters on the canvas of life trying, through each creation, to leave our mark on society; 
+                    to be immortalized as a single stroke in a collage of color.
+                </LongCard>
             </Container>
         );
     }

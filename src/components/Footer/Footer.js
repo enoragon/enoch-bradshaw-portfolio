@@ -24,7 +24,7 @@ const Footer = ({ className }) => (
                 <Icon size="4em" className="mx-3" href="https://twitter.com/bradshaw_enoch">
                     <FaTwitter />
                 </Icon>
-                <Icon size="4em" className="mx-3" href="">
+                <Icon size="4em" className="mx-3" href="https://www.instagram.com/nuckybradshaw">
                     <FaInstagram />
                 </Icon>
                 <Icon size="4em" className="mx-3" href="https://www.linkedin.com/in/enochbradshaw">
