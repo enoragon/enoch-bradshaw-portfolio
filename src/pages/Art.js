@@ -5,7 +5,10 @@ class Art extends Component{
     render(){
         return (
             <Container>
-                <div className="d-flex flex-wrap">
+                <div className="mx-auto">
+                    <h1  className="text-center">Comming Soon</h1>
+                </div>
+                {/* <div className="d-flex flex-wrap">
                 
                     <Image src="https://via.placeholder.com/200"/>
                 
@@ -19,7 +22,7 @@ class Art extends Component{
                 
                     <Image src="https://photos.app.goo.gl/yzL4eoNUZxpZryTJA"/>
 
-                </div>
+                </div> */}
             </Container>
         );
     }
