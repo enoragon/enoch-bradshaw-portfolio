@@ -7,8 +7,6 @@ class Art extends Component{
             <Container>
                 <div className="d-flex flex-wrap">
                 
-                    <Image src={} />
-                
                     <Image src="https://via.placeholder.com/200"/>
                 
                     <Image src="https://via.placeholder.com/200"/>
